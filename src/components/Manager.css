@@ -1,0 +1,222 @@
+.manager-background {
+    background-color: #e0f7fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manager-container {
+    width: 80%;
+    padding: 2rem;
+}
+
+.manager-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.manager-heading-green {
+    color: #0ea5e9;
+}
+
+.manager-subheading {
+    color: #9f7aea;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.manager-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.manager-input {
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.manager-form-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.manager-input-user {
+    padding: 0.5rem;
+    border: 1px solid #b0c4de;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.manager-password-wrapper {
+    position: relative;
+}
+
+.manager-eye-icon {
+    position: absolute;
+    color: #334155;
+    right: 0.5rem;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.save-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manager-save-btn {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manager-save-btn:hover {
+    background-color: #0284c7;
+}
+
+.manager-passwords {
+    margin-top: 2rem;
+}
+
+.manager-passwords-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0369a1;
+}
+
+.manager-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.manager-table-head {
+    background-color: #0369a1;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.manager-table-body {
+    background-color: #e0f2fe;
+    color: black;
+    width: 100%;
+}
+
+.manager-table-cell {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.manager-icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.manager-icon-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.manager-copy-icon {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.manager-icon-spacing {
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .manager-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .manager-heading {
+        font-size: 1.5rem;
+    }
+
+    .manager-passwords-heading {
+        font-size: 1.25rem;
+    }
+
+    .manager-form-row {
+        flex-direction: column;
+    }
+
+    .manager-input {
+        font-size: 0.9rem;
+    }
+
+    .manager-input-user {
+        font-size: 0.9rem;
+    }
+
+    .manager-save-btn {
+        padding: 0.5rem;
+    }
+
+    .manager-table {
+        table-layout: auto;
+    }
+
+    .manager-table-cell {
+        padding: 0.5rem;
+    }
+
+    .manager-icon-wrapper {
+        justify-content: space-between;
+    }
+    
+    .manager-copy-icon{
+        position: relative;
+    }
+
+    .manager-eye-icon{
+        position: relative;
+        top: .3rem;
+        right: 5%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .manager-heading {
+        font-size: 1.25rem;
+    }
+
+    .manager-form-row {
+        gap: 5px;
+    }
+
+    .manager-table-cell {
+        font-size: 0.8rem;
+    }
+
+    .manager-passwords-heading {
+        font-size: 1rem;
+    }
+
+    .manager-eye-icon{
+        position: relative;
+        top: .3rem;
+        right: 7%;
+    }
+}
